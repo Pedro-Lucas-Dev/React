@@ -15,12 +15,27 @@ import { ParOuImpar } from "./Components/Conditional/ParOuImpar";
 import { User } from "./Components/Conditional/User";
 import { Father } from "./Components/Comunicacao/Father";
 import { FatherInd } from "./Components/Comunicacao/FatherInd";
+import { Input } from "./Components/Form/Input";
+import Counter from "./Components/Counter/Counter";
+import { Mega } from "./Components/Mega/Mega";
 
 export const App = (props) => {
   return (
     <div className="App">
       <h1> React Fundamentals: </h1>
       <div className="Cards">
+        <Card title="#14 - Mega" color="#DB3340">
+          <Mega min={0} max={60}></Mega>
+        </Card>
+
+        <Card title="#13 - Counter" color="#FDF200">
+          <Counter startNumber={15}></Counter>
+        </Card>
+
+        <Card title="#12 - Controlled Component" color="#FA6900">
+          <Input></Input>
+        </Card>
+
         <Card title="#11 - Communication Indireta" color=" #00B796">
           <FatherInd></FatherInd>
         </Card>
